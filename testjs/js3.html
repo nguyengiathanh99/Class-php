@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Date </title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Ngày sinh</td>
+            <td>
+                <select>
+                    <script>
+                        for ( var i = 1; i <= 31; i++)
+                        document.write("<option>" + i + "</option>");
+                    </script>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tháng sinh</td>
+            <td>
+                <select>
+                    <script>
+                        for (var i = 1; i <=12; i++)
+                        document.write("<option>" + i +" </option>");
+                    </script>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Năm sinh</td>
+            <td>
+                <select>
+                    <script>
+                        for ( var i = 1950; i <= 2020; i++)
+                        document.write("<option>" + i + "</option>");
+                    </script>
+                </select>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

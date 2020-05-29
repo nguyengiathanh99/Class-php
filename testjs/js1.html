@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test js</title>
+    <script>
+        function add() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("calc").value;
+            var k;
+
+        if ( c == '+')
+        k = parseInt(a) + parseInt(b);
+        else if ( c == '-') {
+            k = parseInt(a) - parseInt(b);
+        }
+        else if ( c == '*') {
+            k = parseInt(a) * parseInt(b);
+        }
+        else if ( c == '/') {
+            k = parseInt(a) / parseInt(b);
+        }
+        // Hiện ra kết quả
+        document.getElementById("result").value = k;
+        }
+    
+    </script>
+</head>
+<body>
+    A <input type="text" id="num1">
+    <br><br>
+    B <input type="text" id="num2">
+    <br><br>
+    Phép tính <input type="text" id="calc">
+    <br><br>
+  <input type="button" onclick = "add();" value="Kết quả">
+  <input type="text " id="result">
+</html>
